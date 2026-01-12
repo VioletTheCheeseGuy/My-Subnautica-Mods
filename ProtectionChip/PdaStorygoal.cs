@@ -20,7 +20,6 @@ namespace ProtectionShield
         {
             var TimeSw = System.Diagnostics.Stopwatch.StartNew();
             StoryGoalHandler.RegisterCustomEvent("Protectionsuitinstalled", () => { });
-            LanguageHandler.RegisterLocalizationFolder("Localization");
             PDAHandler.AddLogEntry("Protectionsuitinstalled", "Protectionsuitinstalled",protectionsuitinstall);
             donecreatingpdalog = true;
             yield return new WaitUntil(() => donecreatingpdalog == true);
@@ -36,9 +35,9 @@ namespace ProtectionShield
 
             FModSoundBuilder builder = new FModSoundBuilder(bundlesoruce);
 
-            IFModSoundBuilder fModSound = builder.CreateNewEvent("assets/audio/protectionchip/firstinstall.wav", Nautilus.Utility.AudioUtils.BusPaths.PDAVoice);
-            fModSound.SetSound("assets/audio/protectionchip/firstinstall.wav").SetFadeDuration(0.5f).SetMode2D(false);
-            protectionsuitinstall = Nautilus.Utility.AudioUtils.GetFmodAsset("assets/audio/protectionchip/firstinstall.wav");
+            IFModSoundBuilder fModSound = builder.CreateNewEvent("FirstInstallProtectionchip", Nautilus.Utility.AudioUtils.BusPaths.PDAVoice);
+            fModSound.SetSound("assets/audio/protectionchip/firstinstall.wav").SetFadeDuration(0.5f).SetMode2D(false).Register();
+            protectionsuitinstall = Nautilus.Utility.AudioUtils.GetFmodAsset("FirstInstallProtectionchip");
             yield return new WaitUntil(() => protectionsuitinstall != null || TimeoutSW.ElapsedMilliseconds >= 5000f);
             donecreatingaudio = true;
             Plugin.Log.LogInfo($"Registed Audio Log As Fmod Asset in {TimeoutSW.ElapsedMilliseconds} Milliseconds!");
