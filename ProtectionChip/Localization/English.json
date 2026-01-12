@@ -5,7 +5,12 @@
     // Chip techtype's
     "ProtectionChipMK1": "Protection Chip MK 1",
     "Tooltip_ProtectionChipMK1": "A experemental protection chip made to stop hostile threat's from harming user's that have the chip installed, MK 1 stops small creature's",
+    "ProtectionChipMK2": "Protection Chip MK 2",
+    "Tooltip_ProtectionChipMK2": "A experemental protection chip made to stop hostile threat's from harming user's that have the chip installed, MK 2 stops small creature's and medium size creature and damage redution to leviathan class lifeform's",
+    "ProtectionChipMK3": "Protection Chip MK 3",
+    "Tooltip_ProtectionChipMK3": "A experemental protection chip made to stop hostile threat's from harming user's that have the chip installed, MK 3 stops small creature's and medium size creature and most if not all leviathan class lifeform's",
 
+    
     //Loading/Registering assets
     "LoadingAudio": "Loading Pda Voiceline (yes why not add one IAL)",
     "RegisteringPDAlogs": "Registering Pda Voiceline",
