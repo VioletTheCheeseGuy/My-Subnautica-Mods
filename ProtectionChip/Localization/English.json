@@ -1,0 +1,14 @@
+{
+    // PdaLog for the protection suit equip
+    "Protectionsuitinstalled": "The protection chip is made for hostile environments, please take caution as the chip is experemental and may not work on some hostile creature's.",
+
+    // Chip techtype's
+    "ProtectionChipMK1": "Protection Chip MK 1",
+    "Tooltip_ProtectionChipMK1": "A experemental protection chip made to stop hostile threat's from harming user's that have the chip installed, MK 1 stops small creature's",
+
+    //Loading/Registering assets
+    "LoadingAudio": "Loading Pda Voiceline (yes why not add one IAL)",
+    "RegisteringPDAlogs": "Registering Pda Voiceline",
+    "RegisteringChips": "Registering Chips"
+    
+}
