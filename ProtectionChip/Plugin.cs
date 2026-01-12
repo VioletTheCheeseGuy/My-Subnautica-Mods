@@ -34,6 +34,8 @@ namespace ProtectionShield
 
             Log.LogInfo($"Loading {Name} Version {Version}");
 
+            LanguageHandler.RegisterLocalizationFolder("Localization");
+
             WaitScreenHandler.RegisterEarlyAsyncLoadTask("Protection Chip", LoadAudio, Language.main.Get("LoadingAudio"));
             WaitScreenHandler.RegisterAsyncLoadTask("Protection Chip", RegisterPDALog, Language.main.Get("RegisteringPDAlogs"));
             WaitScreenHandler.RegisterAsyncLoadTask("Protection Chip", RegisterChips, Language.main.Get("RegisteringChips"));
@@ -62,8 +64,12 @@ namespace ProtectionShield
 
         private IEnumerator RegisterChips(WaitScreenHandler.WaitScreenTask task)
         {
+
             ProtectionChipMK1Techtype.Register();
-            yield return new WaitUntil(() => ProtectionChipMK1Techtype.MK1Techtype == ProtectionChipMK1Techtype.MK1Chip.Info.TechType);
+            ProtectionChipMK2Techtype.Register();
+            ProtectionChipMK3Techtype.Register();
+            StoryUnlockGoals.RegisterCollderGoals();
+            yield return new WaitUntil(() => ProtectionChipMK1Techtype.MK1Techtype == ProtectionChipMK1Techtype.MK1Chip.Info.TechType && ProtectionChipMK3Techtype.MK3Techtype == ProtectionChipMK3Techtype.MK3Chip.Info.TechType);
 
         }
     }
