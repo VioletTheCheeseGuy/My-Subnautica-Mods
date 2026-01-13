@@ -17,7 +17,7 @@ namespace ProtectionShield
         
         internal static void Register()
         {
-            var Prefabinfo = PrefabInfo.WithTechType("ProtectionChipMK1", null, null, unlockAtStart:true).WithIcon(SpriteManager.Get(TechType.ComputerChip));
+            var Prefabinfo = PrefabInfo.WithTechType("ProtectionChipMK1", null, null, unlockAtStart:false).WithIcon(SpriteManager.Get(TechType.ComputerChip));
             var MK1Prefab = new CustomPrefab(Prefabinfo);
             var chipclone = new CloneTemplate(Prefabinfo, TechType.ComputerChip);
             MK1Prefab.SetEquipment(EquipmentType.Chip);
@@ -93,4 +93,5 @@ namespace ProtectionShield
         
     }
 }
+
 
