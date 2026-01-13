@@ -12,7 +12,7 @@ using UWE;
 namespace ProtectionShield
 {
     [BepInPlugin(GUID, Name, Version)]
-    [BepInDependency("ChipLibrary",BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.alexius25.chiplibrary",BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.snmodding.nautilus",BepInDependency.DependencyFlags.HardDependency)]
     public class Plugin : BaseUnityPlugin
     {
@@ -74,4 +74,5 @@ namespace ProtectionShield
         }
     }
 }
+
 
