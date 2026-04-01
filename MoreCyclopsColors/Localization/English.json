@@ -1,0 +1,26 @@
+{
+  "LoadingScreenName": "More Cyclops Colors",
+  "RegisterModule": "Registering Color Module",
+  "LoadingAssets": "Loading Asset Bundle/Icons And Audio",
+
+
+  "EmissionColorPicker": "Emission Color",
+  //not used btw well it is just i could never get the hover text to work on it
+  "EmissionColorPickerHover": "<color=#00c3ff>The Color for the sub lights! Party!!!</color>",
+
+  "EnableSpecColoring": "Enable Main Interior Recoloring",
+  "EnableSpecColoringHover": "<color=#00c3ff>Enables the option to enable the cabin recoloring</color> \r\n<color=#ff0000>I recommend keeping this at false or else you will/can get pretty bad issues</color>",
+
+  "SpecBrightnessPicker": "Interior Brightness",
+  "SpecBrightnessPickerHover": "<color=#00c3ff>How bright the main interior of the sub is (effected by color if cabin recoloring is enabled)</color> \r\n<color=#ff0000>I recommend not setting this at 0 or else you can get a pretty big issue.</color>",
+
+  "CyclopsColorModule": "Cyclops Color Module",
+  "Tooltip_CyclopsColorModule": "A module that allows the cyclops emission to change color, Allowing for ultimate customization.",
+
+  "CyclopsFabUpgradesMiscTabDisplay": "Miscellaneous Upgrades",
+
+  "ModuleDataBox": "Cyclops Color Module : Allows You To Change The Cyclops Emission And Inside Cabin Colors.",
+  "LoadDataBoxInWorld": "Loading Module Databox In World",
+
+  "PDAPickupline":  "Be advised this Cyclops module was still in its prototype stage, And might cause damage to your Cyclops."
+}
